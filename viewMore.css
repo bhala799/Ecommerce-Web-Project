@@ -1,0 +1,40 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+#productDetails main{
+    width: 700px;
+    display: flex;
+    margin: auto;
+}
+#productDetails main #first img{
+    height: 350px;
+    width: 300px;
+}
+#productDetails main #second{
+    padding-top: 28px;
+}
+#productDetails main #second h3,p{
+    margin-bottom: 15px;
+}
+#productDetails main #second #cart{
+    height: 30px;
+    width: 125px;
+    background-color: blue;
+    border: none;
+    border-radius: 4px;
+    color: white;
+}
+#productDetails main #second #home{
+    height: 30px;
+    width: 125px;
+    background-color: red;
+    border: none;
+     border-radius: 4px;
+     color: white;
+}
+ #customer{
+    width: 700px;
+    margin: auto;
+ }

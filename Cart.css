@@ -1,0 +1,35 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+#cartContent .prod-info #image-prod{
+    height: 300px;
+    width: 900px;
+    border: 1px solid brown;
+    display: flex;
+    margin: 50px auto;
+    gap:50px;
+    box-shadow: 20px;
+}
+#product-details{
+    margin-top: 40px;
+}
+#product-details p{
+    margin-top: 8px;
+}
+#button button
+{
+    height: 29px;
+    width: 100px;
+    background-color: red;
+    border: none;
+    border-radius: 4px;
+    margin-top: 120px;
+    margin-left: 30px;
+    color: white;
+}
+#totalprice{
+    margin-left: 850px;
+    margin-bottom: 100px;
+}

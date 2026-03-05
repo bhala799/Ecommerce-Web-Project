@@ -1,0 +1,135 @@
+*{
+    padding: 0;
+    margin: 0px;
+    box-sizing: border-box;
+}
+nav{
+    height: 60px;
+    width: 90%;
+    display: flex;
+    border: 1px solid saddlebrown;
+    gap: 50px;
+    margin: 20px auto;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+#logo{
+    flex-basis: 10%;
+}
+
+#enquiry{
+    display: flex;
+    gap: 40px;
+    flex-basis: 30%;
+}
+#enquiry a{
+    text-decoration: none;
+}
+#searchbox{
+    flex-basis: 30%;
+    position: relative;
+}
+#searchbox #searchbar{
+    height: 30px;
+    width: 250px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+#searchbox i{
+    position: absolute;
+    top: 8px;
+    right: 100px;
+}
+#productContainer{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 10px;
+    background-color: rgb(154, 103, 41);
+}
+#productContainer main{
+    height: 350px;
+    width: 300px;
+    background-color: rgb(235, 235, 235);
+    margin-top: 10px;
+    border-radius: 8px;
+
+}
+#productContainer img{
+     height: 250px;
+     width: 250px;
+     transition: transform 3s linear;
+}
+#productContainer img:hover{
+    transform: scale(1.2);
+    overflow: hidden;
+}
+#productContainer #image
+{
+    background-color:rgb(166, 166, 230);
+}
+#productContainer h2{
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+#productContainer #info{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    padding: 0px 15px;
+}
+#productContainer #info h3{
+    font-size: 16px;
+}
+#productContainer #info button{
+    height: 25px;
+    width: 90px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(141, 141, 220);
+    color: white;
+}
+#productContainer #title{
+    font-size: 15px;
+    margin-top: 4px;
+}
+
+
+/* Responsive page */
+
+#groups{
+    height: 35px;
+    width: 40px;
+    /* display: flex; */
+    display: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#groups span{
+    display: block;
+    height: 3px;
+    width: 40px;
+    background-color: black;
+}
+#hamburger{
+    display: none;
+}
+@media (max-width:750px)
+{
+    #enquiry,#searchbox,#cart
+    {
+        display: none;
+    }                                                                   
+    #groups{
+        display: flex;
+        margin-left: 280px;
+    }
+    #hamburger:checked ~ #enquiry,#hamburger:checked ~ #searchbox,#hamburger:checked ~ #cart{
+        display: flex;
+    }
+
+}
